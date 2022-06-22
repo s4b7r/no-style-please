@@ -11,8 +11,9 @@ layout: default
     </div>
     <div class="landing-header-links">
       {%-if site.author_github-%}
-        <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg -->
-        <!-- https://github.com/simple-icons/simple-icons -->
+        <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" alt="GitHub logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg -->
+        <a href="https://orcid.org/{{site.author_orcid}}" target="_blank"><img class="social-icon" alt="ORCID logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/orcid.svg" /></a> <!-- ORCID logo from https://github.com/simple-icons/simple-icons -->
+        <a href="https://researchgate.org/profile/{{site.author_researchgate}}" target="_blank"><img class="social-icon" alt="ResearchGate logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/researchgate.svg" /></a> <!-- ResearchGate logo from https://github.com/simple-icons/simple-icons -->
       {%-endif-%}
     </div>
   </div>
