@@ -103,10 +103,12 @@ img {
 
 .landing-header-title {
   flex: auto;
+  flex-grow: 1;
 }
 
-.landing-header-links {
+.landing-header-link {
   flex: auto;
+  flex-grow: 0;
   text-align: right;
   margin-top: 2.5rem;
 }

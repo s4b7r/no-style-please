@@ -6,25 +6,33 @@ layout: default
     <div class="landing-header-title">
       <h1>{{ site.title }}</h1>
       {%-if site.theme_config.show_description-%}
-        <p>{{ site.description }}</p>
+      <p>{{ site.description }}</p>
       {%-endif-%}
     </div>
-    <div class="landing-header-links">
-      {%-if site.author_github-%}
-        <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" alt="GitHub logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg -->
-        <a href="https://orcid.org/{{site.author_orcid}}" target="_blank"><img class="social-icon" alt="ORCID logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/orcid.svg" /></a> <!-- ORCID logo from https://github.com/simple-icons/simple-icons -->
-        <a href="https://researchgate.org/profile/{{site.author_researchgate}}" target="_blank"><img class="social-icon" alt="ResearchGate logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/researchgate.svg" /></a> <!-- ResearchGate logo from https://github.com/simple-icons/simple-icons -->
-      {%-endif-%}
+    {%-if site.author_github-%}
+    <div class="landing-header-link">
+      <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" alt="GitHub logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg -->
     </div>
+    {%-endif-%}
+    {%-if site.author_orcid-%}
+    <div class="landing-header-link">
+      <a href="https://orcid.org/{{site.author_orcid}}" target="_blank"><img class="social-icon" alt="ORCID logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/orcid.svg" /></a> <!-- ORCID logo from https://github.com/simple-icons/simple-icons -->
+    </div>
+    {%-endif-%}
+    {%-if site.author_researchgate-%}
+    <div class="landing-header-link">
+      <a href="https://researchgate.net/profile/{{site.author_researchgate}}" target="_blank"><img class="social-icon" alt="ResearchGate logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/researchgate.svg" /></a> <!-- ResearchGate logo from https://github.com/simple-icons/simple-icons -->
+    </div>
+    {%-endif-%}
   </div>
 </header>
 
 {%-if site.theme_config.show_index_content_in_top-%}
-  {{ content }}
+{{ content }}
 {%-endif-%}
 
 {%-include menu_item.html collection=site.data.menu.entries-%}
 
 {%-unless site.theme_config.show_index_content_in_top-%}
-  {{ content }}
+{{ content }}
 {%-endunless-%}
