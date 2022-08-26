@@ -11,7 +11,7 @@ layout: default
     </div>
     {%-if site.author_github-%}
     <div class="landing-header-link">
-      <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" alt="GitHub logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg -->
+      <a href="https://github.com/{{site.author_github}}" target="_blank"><img class="social-icon" alt="GitHub logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"></a> <!-- GitHub mark from https://github.com/simple-icons/simple-icons -->
     </div>
     {%-endif-%}
     {%-if site.author_orcid-%}
@@ -22,6 +22,16 @@ layout: default
     {%-if site.author_researchgate-%}
     <div class="landing-header-link">
       <a href="https://researchgate.net/profile/{{site.author_researchgate}}" target="_blank"><img class="social-icon" alt="ResearchGate logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/researchgate.svg" /></a> <!-- ResearchGate logo from https://github.com/simple-icons/simple-icons -->
+    </div>
+    {%-endif-%}
+    {%-if site.author_linkedin-%}
+    <div class="landing-header-link">
+      <a href="https://www.linkedin.com/in/{{site.author_linkedin}}/" target="_blank"><img class="social-icon" alt="LinkedIn logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" /></a> <!-- LinkedIn logo from https://github.com/simple-icons/simple-icons -->
+    </div>
+    {%-endif-%}
+    {%-if site.author_twitter-%}
+    <div class="landing-header-link">
+      <a href="https://twitter.com/{{site.author_twitter}}" target="_blank"><img class="social-icon" alt="Twitter logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/twitter.svg" /></a> <!-- Twitter logo from https://github.com/simple-icons/simple-icons -->
     </div>
     {%-endif-%}
   </div>
